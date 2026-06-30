@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ site.title }}</title>
+<link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+
+<header>
+  <a href="{{ '/' | relative_url }}" class="logo">이기림이그린<span class="highlight">기린</span>그림</a>
+</header>
+
+<main>
+  {{ content }}
+</main>
+
+<footer>
+  <span>이기림이그린기린그림</span>
+  <span>{{ 'now' | date: "%Y" }}</span>
+</footer>
+
+</body>
+</html>
